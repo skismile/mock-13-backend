@@ -17,6 +17,8 @@ app.use("/game",GameRouter)
 mongoose.set("strictQuery", false);
 app.get('/',(req,res)=>{res.send('hello')})
  
+ 
+
 
 mongoose.connect(MONGO_URL,()=>{
 app.listen(PORT,()=>{console.log('server is runing on port 8080')})
